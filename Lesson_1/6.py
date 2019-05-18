@@ -5,4 +5,4 @@ x = int(input('Введите номер буквы (1-26): '))
 
 a = ord('a') - 1
 
-print(f'{x} - это {chr(x+a)}')
+print(f'{x} - это {chr(x + a)}')

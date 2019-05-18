@@ -9,7 +9,6 @@
 символ алфавита от 'a' до 'f' включительно.
 """
 import random, string
-alphabet = string.ascii_lowercase
 
 a = int(input('Введите нижнюю границу целого числа: '))
 b = int(input('Введите верхнюю границу целого числа: '))
