@@ -5,3 +5,24 @@
 число, чем то, что загадано. Если за 10 попыток число не отгадано,
 то вывести загаданное число.
 """
+from random import randint
+
+
+def guesser(num, tries=0):
+    guess = int(input('Введите число: '))
+
+    if guess == num:
+        print('Победа!')
+        return
+    elif tries == 9:
+        print(f'Число - {num}')
+        return
+    elif int(guess) > num:
+        print('Введеное число больше!')
+    else:
+        print('Введеное число меньше!')
+
+    guesser(num, tries + 1)
+
+
+guesser(randint(0, 100))
