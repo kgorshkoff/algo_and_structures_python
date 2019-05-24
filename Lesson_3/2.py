@@ -5,3 +5,15 @@
 (или 0, 3, 4, 5 - если индексация начинается с нуля),
 т.к. именно в этих позициях первого массива стоят четные числа.
 """
+from random import randint
+
+lst = []
+even = []
+
+for i in range(10):
+    num = randint(1, 10)
+    lst.append(num)
+    if num % 2 == 0:
+        even.append(lst.index(num))
+
+print(f'В списке {lst} четные числа стоят по индексам {even}')

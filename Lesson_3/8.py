@@ -4,3 +4,15 @@
 записывать ее в последнюю ячейку строки.
 В конце следует вывести полученную матрицу.
 """
+mtx = [[0 for x in range(5)] for i in range(4)]
+
+for i in range(4):
+    line_sum = 0
+    for j in range(4):
+        mtx[i][j] = int(input(f"Введите {j + 1} знак {i + 1} строки: "))
+    for k in mtx[i]:
+        line_sum += k
+    mtx[i][4] = line_sum
+
+for i in mtx:
+    print(i)
