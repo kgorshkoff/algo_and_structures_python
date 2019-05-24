@@ -9,23 +9,3 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
-
-while True:
-    oper = input("Выберите действие (+, -, *, /) или 0 для завершения программы: ")
-    if oper == '0': break
-    if oper in '+-*/':
-        x = float(input("Первое число = "))
-        y = float(input("Второе число = "))
-        if oper == '+':
-            print(x + y)
-        elif oper == '-':
-            print(x - y)
-        elif oper == '*':
-            print(x * y)
-        elif oper == '/':
-            if y != 0:
-                print(x / y)
-            else:
-                print("На ноль делить нельзя!")
-    else:
-        print("Неверный знак операции!")
